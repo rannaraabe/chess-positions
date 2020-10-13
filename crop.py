@@ -16,7 +16,7 @@ for i in dataset_list:
     while(y < 400):
       while(x < 400):
         cropped_img = img[y:y+vr, x:x+vr].copy()
-        filename = str(index) + ".jpeg"
+        filename = "./dataset/" + str(index) + ".jpeg"
         cv2.imwrite(filename, cropped_img)
         x += vr
         index += 1
